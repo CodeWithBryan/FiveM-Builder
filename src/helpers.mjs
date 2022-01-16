@@ -52,6 +52,16 @@ export const handleDeploy = (rconClient, config, resourceFolders, key, buildDir)
         const builtFile = `${config.TemporaryDirectory}/${buildDir}/${context}.js`;
         fs.copyFileSync(builtFile, `${deployPath}/${context}.js`);
     }
+
+    fs.writeFileSync(`${deployPath}/fxmanifest.lua`,
+`fx_version 'cerulean'
+game 'gta5'
+
+name '${resourceFolders[key].resource}'
+author '${config.Author}'
+
+client_script 'client.js'
+server_script 'server.js'`);
     
     rconClient.send(`refresh; ensure ${resourceFolders[key].resource}`);
 

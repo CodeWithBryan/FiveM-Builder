@@ -3,6 +3,7 @@
     "DeployFolder": "C:\\Users\\Admin\\Development\\MyServer\\server\\data\\resources",
     "ResourcesFolder": "resources",
     "TemporaryDirectory": "tmp",
+    "Author": "MrBoolean",
     "RCON": {
         "password": "rconpassword",
         "address": "localhost",
