@@ -24,7 +24,6 @@ export const findResource = (resourceFolders, directory) => {
     for (let resource of files) {
         if (!resource.match(/\[.*\]/)) {
             resourceFolders[`${Date.now()}-${resource}`] = {
-                buildStart: 0,
                 resource,
                 client: "",
                 server: "",

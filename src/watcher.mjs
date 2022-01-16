@@ -81,9 +81,3 @@ if (!fs.existsSync(`./${config.TemporaryDirectory}`)) {
 
 // Clear our old cache
 rimraf.sync(`./${config.TemporaryDirectory}/*`);
-
-/* Trigger a deploy on all resources */
-for (let key of Object.keys(resourceFolders)) {
-    resourceFolders[key].buildStart = Date.now();
-    // handleChange(key);
-}
