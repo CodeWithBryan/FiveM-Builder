@@ -17,6 +17,11 @@ This tool was written to make developing typescript based resources for FiveM a 
 
 In the simplest form, this setup is meant to take a raw project folder, watch it for changes, transpile and build as needed, and then push those changes to your FiveM Development Server when required. It will also use FiveM RCON to automatically restart the resource when it has completed the updates. This tool takes advantage of ESBuild to achieve extremely fast build times.
 
+## Limitations
+
+ - Currently this doesn't support any NUI
+ - This system requires that all your client/server code is in respective folders, with the entry file being named `resource.ts` for both.
+
 ## Contributing
 
 If you wanna make changes, report bugs, etc, all that is more than welcome via the github Pull Request/Issue system.
