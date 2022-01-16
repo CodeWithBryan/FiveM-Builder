@@ -1,0 +1,30 @@
+{
+  "name": "fivem-builder",
+  "version": "1.0.0",
+  "description": "A FiveM Typescript build tool",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node --experimental-json-modules src/watcher.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeWithBryan/FiveM-Builder.git"
+  },
+  "keywords": [
+    "fivem",
+    "builder",
+    "devtool"
+  ],
+  "author": "MrBoolean",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeWithBryan/FiveM-Builder/issues"
+  },
+  "homepage": "https://github.com/CodeWithBryan/FiveM-Builder#readme",
+  "dependencies": {
+    "chokidar": "^3.5.2",
+    "esbuild": "^0.14.11",
+    "esbuild-plugin-time": "^1.0.0",
+    "rimraf": "^3.0.2"
+  }
+}
