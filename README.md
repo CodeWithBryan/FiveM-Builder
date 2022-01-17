@@ -14,6 +14,17 @@ This tool was written to make developing typescript based resources for FiveM a 
 This will create a folder in your current directory containing the resource structure, as well as everything you need to get started on a new project. The only other thing you need to do is plugin in the directory of your development server resources folder into the generated config.json file.
 
 For automated reloading of resources, you also need to add rcon to your server config. To use all the default values, simply add `rcon_password rconpassword` to your cfx server.cfg. You can modify the rcon password in the `config.json` in the root of your project.
+
+### Generating a resource
+**`fivem generate [parent name] [resource name]`**
+
+This must be run inside the root of your project. This will create a resource such as
+`fivem generate testing test-resource` -> `root/resources/[testing]/test-resource`
+
+### Using the Dev Server
+**`fivem watch`**
+
+This must be run inside the root of your project
   
 
 ## What does this do?
