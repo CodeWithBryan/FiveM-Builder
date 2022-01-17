@@ -8,7 +8,7 @@ const rcon = require('../util/rcon');
 const { findResource } = require('../util/findResource');
 const { findResourceParent } = require('../util/findResourceParent');
 
-const watch = (...args) => {
+const watch = () => {
     const config = loadConfig();
     if (!config) return;
 
@@ -78,7 +78,6 @@ const watch = (...args) => {
                         },
                     });
                 }
-                
             }
         } catch (err) {
             console.log(err);
