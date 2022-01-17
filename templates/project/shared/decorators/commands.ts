@@ -9,11 +9,6 @@ export const Command = (args: any = {}, description?: string) => {
             commandName: propertyKey,
             protoArgs: args,
         });
-
-        let commandSuggestion = `${propertyKey}`;
-        for(let key in args) {
-            commandSuggestion += ` ${key}`;
-        }
     }
 }
 
