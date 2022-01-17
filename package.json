@@ -1,10 +1,12 @@
 {
   "name": "fivem-builder",
-  "version": "1.0.0",
-  "description": "A FiveM Typescript build tool",
-  "main": "index.js",
-  "scripts": {
-    "watch": "node --experimental-json-modules src/watcher.mjs"
+  "version": "1.1.0",
+  "description": "A FiveM CLI Build Tool",
+  "bin": {
+    "fivem": "bin/fivem-cli"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "repository": {
     "type": "git",
@@ -13,18 +15,24 @@
   "keywords": [
     "fivem",
     "builder",
-    "devtool"
+    "devtool",
+    "cli",
+    "fivem-cli"
+  ],
+  "files": [
+    "src",
+    "bin",
+    "templates"
   ],
   "author": "MrBoolean",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/CodeWithBryan/FiveM-Builder/issues"
   },
   "homepage": "https://github.com/CodeWithBryan/FiveM-Builder#readme",
   "dependencies": {
-    "chokidar": "^3.5.2",
+    "commander": "^8.3.0",
     "esbuild": "^0.14.11",
-    "esbuild-plugin-time": "^1.0.0",
-    "rimraf": "^3.0.2"
+    "esm": "^3.2.25"
   }
 }

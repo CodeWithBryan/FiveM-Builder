@@ -1,0 +1,49 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@resources/*": [
+                "resources/*"
+            ],
+            "@shared/*": [
+                "shared/*"
+            ],
+        },
+        "outDir": "./",
+        "noImplicitAny": false,
+        "module": "commonjs",
+        "target": "ES2018",
+        "allowJs": true,
+        "strict": true,
+        "strictNullChecks": false,
+        "strictPropertyInitialization": false,
+        "lib": [
+            "es2018"
+        ],
+        "types": [
+            "@citizenfx/server",
+            "@citizenfx/client",
+            "@types/node"
+        ],
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": [
+        "shared/**/*",
+        "resources/**/*"
+    ],
+    "exclude": [
+        "/node_modules",
+        "/node_modules/",
+        "node_modules/",
+        "node_modules",
+        "**/node_modules",
+        "**/nui/*",
+        "**/html/*.js"
+    ]
+}
